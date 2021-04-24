@@ -1,0 +1,14 @@
+[database]
+path=/home/aacienfuegos/.local/share/mail
+[user]
+name=andres.acienfuegos
+primary_email=andres.acienfuegos@gmail.com
+[new]
+tags=unread;inbox;
+ignore=.mbsyncstate;.uidvalidity
+[search]
+exclude_tags=deleted;spam;
+[maildir]
+synchronize_flags=true
+[crypto]
+gpg_path=gpg
