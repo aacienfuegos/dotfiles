@@ -1,4 +1,27 @@
 *.log*
-nvim/plugged/*
-shell/privaterc
 BraveSoftware/*
+Microsoft/*
+Nextcloud/*
+QtProject.conf
+Unknown\ Organization/*
+VirtualBox/*
+coc/*
+configstore/*
+dconf/*
+menus/*
+nvim/plugged/*
+pulse/*
+shell/privaterc
+skypeforlinux/*
+teams/*
+zoomus.conf
+
+mpd/*
+!mpd.conf
+
+libreoffice/*
+
+Code\ -\ *
+VSCodium/*
+
+obs-studio/*
