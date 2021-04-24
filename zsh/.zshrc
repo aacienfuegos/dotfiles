@@ -18,6 +18,9 @@ setopt appendhistory
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 #[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
+# Load private stuff if existent.
+[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/privaterc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/privaterc"
+
 # Basic auto/tab complete:
 autoload -U compinit
 zstyle ':completion:*' menu select
