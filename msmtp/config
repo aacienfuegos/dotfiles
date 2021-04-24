@@ -1,0 +1,22 @@
+account andres.acienfuegos@gmail.com
+host smtp.gmail.com
+port 587
+from andres.acienfuegos@gmail.com
+user andres.acienfuegos@gmail.com
+passwordeval "pass andres.acienfuegos@gmail.com"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/aacienfuegos/.config/msmtp/msmtp.log
+
+account andres.acremades@alumnos.upm.es
+host smtp.upm.es
+port 587
+from andres.acremades@alumnos.upm.es
+user andres.acremades
+passwordeval "pass andres.acremades@alumnos.upm.es"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/aacienfuegos/.config/msmtp/msmtp.log
+
