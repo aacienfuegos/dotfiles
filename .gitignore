@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!alacritty/
+!fish/
+!neofetch/
+!nvim/
+!qtile/
+!spotify-tui/
+!termite/
