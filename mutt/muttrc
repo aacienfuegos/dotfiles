@@ -1,0 +1,8 @@
+# vim: filetype=neomuttrc
+source /usr/share/mutt-wizard/mutt-wizard.muttrc
+source /home/aacienfuegos/.config/mutt/accounts/1-andres.acienfuegos@gmail.com.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/aacienfuegos/.config/mutt/accounts/1-andres.acienfuegos@gmail.com.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to andres.acienfuegos@gmail.com"
+
+# Custom settings
+set query_command= "khard email --parsable %s"
+macro index,pager i2 '<sync-mailbox><enter-command>source /home/aacienfuegos/.config/mutt/accounts/2-andres.acremades@alumnos.upm.es.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to andres.acremades@alumnos.upm.es"

@@ -1,0 +1,43 @@
+# vim: filetype=neomuttrc
+# muttrc file for account andres.acremades@alumnos.upm.es
+set realname = "andres.acremades"
+set from = "andres.acremades@alumnos.upm.es"
+set sendmail = "msmtp -a andres.acremades@alumnos.upm.es"
+alias me andres.acremades <andres.acremades@alumnos.upm.es>
+set folder = "/home/aacienfuegos/.local/share/mail/andres.acremades@alumnos.upm.es"
+set header_cache = /home/aacienfuegos/.cache/mutt-wizard/andres.acremades@alumnos.upm.es/headers
+set message_cachedir = /home/aacienfuegos/.cache/mutt-wizard/andres.acremades@alumnos.upm.es/bodies
+set mbox_type = Maildir
+
+
+bind index,pager gg noop
+bind index,pager g noop
+bind index,pager M noop
+bind index,pager C noop
+bind index gg first-entry
+unmailboxes *
+unalternates *
+unset signature
+unmacro index o
+macro index o "<shell-escape>mw -y andres.acremades@alumnos.upm.es<enter>" "run mbsync to sync andres.acremades@alumnos.upm.es"
+
+mailboxes "=Trash" "=Sent" "=Spam" "=Drafts" "=INBOX"
+macro index,pager gt "<change-folder>=Trash<enter>" "go to trash"
+macro index,pager Mt ";<save-message>=Trash<enter>" "move mail to trash"
+macro index,pager Ct ";<copy-message>=Trash<enter>" "copy mail to trash"
+set trash = "+Trash"
+set record = "+Sent"
+macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
+macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
+macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
+macro index,pager gS "<change-folder>=Spam<enter>" "go to spam"
+macro index,pager MS ";<save-message>=Spam<enter>" "move mail to spam"
+macro index,pager CS ";<copy-message>=Spam<enter>" "copy mail to spam"
+set postponed = "+Drafts"
+macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
+macro index,pager Md ";<save-message>=Drafts<enter>" "move mail to drafts"
+macro index,pager Cd ";<copy-message>=Drafts<enter>" "copy mail to drafts"
+macro index,pager gi "<change-folder>=INBOX<enter>" "go to inbox"
+macro index,pager Mi ";<save-message>=INBOX<enter>" "move mail to inbox"
+macro index,pager Ci ";<copy-message>=INBOX<enter>" "copy mail to inbox"
+set spoolfile = "+INBOX"
