@@ -1,3 +1,4 @@
 *.log
 nvim/plugged/*
 shell/privaterc
+BraveSoftware/*
