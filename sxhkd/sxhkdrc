@@ -1,0 +1,23 @@
+# Audio Keys
+XF86Audio{Prev,Next}
+				playerctl {previous,next}
+
+XF86Audio{RaiseVolume,LowerVolume}
+				pactl set-sink-volume @DEFAULT_SINK@ {+1000,-1000}
+
+XF86AudioMute
+				pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Gui applications
+super + o
+				okular
+	
+
+# Tui applications
+super + {m}
+				$TERMINAL -e {neomutt}
+
+super + shift + r
+				pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+
