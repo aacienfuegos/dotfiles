@@ -158,7 +158,7 @@ set shiftwidth=4
 	nnoremap S :%s//g<Left><Left>
 
 " Compile document, be it groff/LaTeX/markdown/etc.
-	map <leader>c :w! \| !compiler "<c-r>%"<CR>
+	map <leader>c :ab! \| !compiler "<c-r>%"<CR>
 
 " Open corresponding .pdf/.html or preview
 	map <leader>p :!opout <c-r>%<CR><CR>
@@ -167,7 +167,7 @@ set shiftwidth=4
 	autocmd VimLeave *.tex !texclear %
 
 " Save file as sudo on files that require root permission
-	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+	ab w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Don't show sudo warning
 	au BufEnter * set noro
