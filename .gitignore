@@ -15,6 +15,7 @@ shell/privaterc
 skypeforlinux/*
 teams/*
 zoomus.conf
+zsh/.zcompdump
 
 mpd/*
 !mpd.conf
