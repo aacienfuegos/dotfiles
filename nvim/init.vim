@@ -159,6 +159,10 @@ set noshowcmd
 set ignorecase
 set number relativenumber
 
+" Set persistent undo
+set undodir=$XDG_CACHE_HOME/nvim/undodir
+set undofile
+
 " Remaps
 cnoreabbrev nt NERDTree
 cnoreabbrev pi PlugInstall
