@@ -99,3 +99,5 @@ map b $setbg $f
 map <c-e> down
 map <c-y> up
 map V push :!nvim<space>
+
+map <esc> clear
