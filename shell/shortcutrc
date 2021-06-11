@@ -1,2 +1,4 @@
 # vim: filetype=sh
-#alias 
+
+# Wine
+alias optiperformer="wine ~/.local/share/wineprefixes/default/drive_c/Program\ Files/Optiwave\ Software/OptiPerformer\ 17/bin/OptiPerformerx64.exe"
