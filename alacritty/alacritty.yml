@@ -19,6 +19,11 @@ window:
   padding:
     x: 3
 
+key_bindings:
+  - { key: Space, mods: Alt, action: ToggleViMode }
+  - { key: V, mods: Alt, action: Paste }
+  - { key: C, mods: Alt, action: Copy }
+
 colors:
   primary:
     background: '#2e3440'
