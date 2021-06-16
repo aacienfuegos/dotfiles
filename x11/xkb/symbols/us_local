@@ -1,0 +1,14 @@
+partial alphanumeric_keys
+xkb_symbols "altgr-intl" {
+	include "us(altgr-intl)"
+	name[Group1]= "English (intl., with AltGr dead keys)";
+
+	// modified keys
+	key <TLDE> { [ asciitilde, grave, dead_tilde, dead_grave ] };
+	key <BKSL> {	[ bar, backslash ]	};
+	key <LSGT> { [ bar] };
+
+	include "tools_local(vim)"
+	include "level3(alt_switch)"
+	include "tools_local(left_gt_alt)"
+};

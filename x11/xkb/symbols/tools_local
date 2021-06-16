@@ -1,0 +1,14 @@
+// Adds vim keybindings
+partial alphanumeric_keys
+xkb_symbols "vim" {
+    key <AC06> { [   h,      H,     Left,        H ] };
+    key <AC07> { [   j,      J,     Down,        J ] };
+    key <AC08> { [   k,      K,      Up,        OE ] };
+    key <AC09> { [   l,	     L,     Right,    Ooblique ] };
+};
+
+// Left < is Alt_L
+partial alphanumeric_keys
+xkb_symbols "left_gt_alt" {
+   key <LSGT> { [ Alt_L] };
+};
