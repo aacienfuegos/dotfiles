@@ -5,7 +5,6 @@ xkb_symbols "altgr-intl" {
 
 	// modified keys
 	key <TLDE> { [ asciitilde, grave, dead_tilde, dead_grave ] };
-	key <BKSL> {	[ bar, backslash ]	};
 	key <LSGT> { [ bar] };
 
 	include "tools_local(vim)"
