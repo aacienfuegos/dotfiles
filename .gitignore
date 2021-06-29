@@ -5,9 +5,11 @@ Nextcloud/*
 QtProject.conf
 Unknown\ Organization/*
 VirtualBox/*
+GIMP/*
 coc/*
 configstore/*
 dconf/*
+flameshot/*
 menus/*
 nvim/plugged/*
 pulse/*
@@ -26,3 +28,6 @@ Code\ -\ *
 VSCodium/*
 
 obs-studio/*
+
+transmission/*
+!transmission/settings.json
