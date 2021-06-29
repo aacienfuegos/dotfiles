@@ -1,4 +1,4 @@
-# Common recent settings file for Wireshark 3.5.0.
+# Common recent settings file for Wireshark 3.4.6.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -12,14 +12,16 @@
 
 ######## Recent display filters (latest last), cannot be altered through command line ########
 
+recent.display_filter: mdns
+recent.display_filter: tcp
 recent.display_filter: dns
 
 # Main window geometry.
 # Decimal numbers.
-gui.geometry_main_x: 1919
-gui.geometry_main_y: 17
-gui.geometry_main_width: 1364
-gui.geometry_main_height: 748
+gui.geometry_main_x: 1947
+gui.geometry_main_y: 25
+gui.geometry_main_width: 672
+gui.geometry_main_height: 724
 
 # Main window maximized.
 # TRUE or FALSE (case-insensitive).
@@ -35,7 +37,7 @@ gui.geometry_status_pane: 250
 
 # Statusbar middle pane size.
 # Decimal number.
-gui.geometry_status_pane_right: 250
+gui.geometry_status_pane_right: 762
 
 # Last used Configuration Profile.
 gui.last_used_profile: Default
@@ -67,6 +69,24 @@ gui.search_case_sensitive: FALSE
 # Find packet search type.
 # One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
 gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 1950
+gui.geom.PacketDialog.y: 28
+gui.geom.PacketDialog.width: 740
+gui.geom.PacketDialog.height: 724
+# TRUE or FALSE (case-insensitive).
+gui.geom.PacketDialog.maximized: FALSE
+
+# Geometry and maximized state of VoipCallsDialog window.
+# Decimal integers.
+gui.geom.VoipCallsDialog.x: 1950
+gui.geom.VoipCallsDialog.y: 28
+gui.geom.VoipCallsDialog.width: 842
+gui.geom.VoipCallsDialog.height: 724
+# TRUE or FALSE (case-insensitive).
+gui.geom.VoipCallsDialog.maximized: FALSE
 
 # Custom colors.
 # List of custom colors selected in Qt color picker.

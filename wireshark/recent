@@ -1,4 +1,4 @@
-# Recent settings file for Wireshark 3.5.0.
+# Recent settings file for Wireshark 3.4.6.
 #
 # This file is regenerated each time Wireshark is quit
 # and when changing configuration profile.
@@ -71,21 +71,21 @@ gui.packet_diagram_field_values: FALSE
 
 # Main window upper (or leftmost) pane size.
 # Decimal number.
-gui.geometry_main_upper_pane: 266
+gui.geometry_main_upper_pane: 230
 
 # Main window middle pane size.
 # Decimal number.
-gui.geometry_main_lower_pane: 127
+gui.geometry_main_lower_pane: 169
 
 # Packet list column pixel widths.
 # Each pair of strings consists of a column format and its pixel width.
 column.width:
-        %m, -1,
-        %t, -1,
-        %s, -1,
-        %d, -1,
-        %p, -1,
-        %L, -1,
+        %m, 59,
+        %t, 84,
+        %s, 154,
+        %d, 154,
+        %p, 113,
+        %L, 138,
         %i, 781
 
 # Open conversation dialog tabs.
