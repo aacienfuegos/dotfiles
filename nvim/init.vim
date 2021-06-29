@@ -139,6 +139,7 @@ require'lspconfig'.pyls.setup{}
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.bashls.setup{}
 require'lspconfig'.cmake.setup{}
+require'lspconfig'.rust_analyzer.setup{}
 
 EOF
 
