@@ -135,7 +135,7 @@ nvim_lsp.sumneko_lua.setup {
   },
 }
 
-require'lspconfig'.pyls.setup{}
+require'lspconfig'.pyright.setup{}
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.bashls.setup{}
 require'lspconfig'.cmake.setup{}
