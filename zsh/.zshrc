@@ -25,6 +25,7 @@ setopt appendhistory
 autoload -U compinit
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion::complete:*' gain-privileges 1
 zmodload zsh/complist
 compinit
 _comp_options+=(globdots)		# Include hidden files.
