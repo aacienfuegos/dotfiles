@@ -20,6 +20,7 @@ window:
     x: 3
 
 key_bindings:
+  - { key: Escape, mods: Shift, action: ToggleViMode }
   - { key: Space, mods: Alt, action: ToggleViMode }
   - { key: V, mods: Alt, action: Paste }
   - { key: C, mods: Alt, action: Copy }
