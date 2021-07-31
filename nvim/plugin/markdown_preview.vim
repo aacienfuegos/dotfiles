@@ -1,0 +1,2 @@
+let vim_markdown_preview_browser=$MY_BROWSER
+let vim_markdown_preview_github=1
