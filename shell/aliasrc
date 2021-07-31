@@ -29,6 +29,7 @@ alias cal='ikhal && clear'
 
 # Git
 alias gs='git status'
+alias gd='git diff $@'
 alias ga='git add $@'
 alias gc='git commit -m $1'
 alias gp='git push'
