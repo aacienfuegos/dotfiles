@@ -26,3 +26,9 @@ alias mpow="sh $HOME/.scripts/mpow.sh"
 alias msfconsole="msfconsole --quiet -x \"db_connect $USER@msf\""
 alias py="python"
 alias cal='ikhal && clear'
+
+# Git
+alias gs='git status'
+alias ga='git add $@'
+alias gc='git commit -m $1'
+alias gp='git push'
