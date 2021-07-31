@@ -3,7 +3,8 @@
 runtime! archlinux.vim
 
 " Load list of plugins
-source plugins.vim
+source $XDG_CONFIG_HOME/nvim/plugins.vim
+
 
 let mapleader=" "
 
