@@ -11,6 +11,7 @@ alias ls="exa"
 alias la="exa -a"
 alias ll="exa -lh"
 alias du='du -h'
+alias df='df -h'
 
 alias cat="bat"
 alias fd="fd --hidden"
