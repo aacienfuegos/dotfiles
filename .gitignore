@@ -13,6 +13,7 @@ flameshot/*
 menus/*
 nvim/plugged/*
 pulse/*
+*.secret
 shell/privaterc
 skypeforlinux/*
 teams/*
