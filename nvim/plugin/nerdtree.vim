@@ -6,5 +6,8 @@ else
 endif
 
 cnoreabbrev nt NERDTree
+
 map <leader>n :NERDTreeToggle<CR>
-let g:NERDTreeMapToggleHidden = "."
+
+let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeStatusline = -1
