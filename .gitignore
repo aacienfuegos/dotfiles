@@ -12,6 +12,7 @@ dconf/*
 flameshot/*
 menus/*
 nvim/plugged/*
+nvim/autoload/*
 pulse/*
 *.secret
 shell/privaterc
