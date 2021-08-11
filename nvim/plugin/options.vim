@@ -19,6 +19,7 @@ set tabstop=4
 set shiftwidth=4
 set smartindent
 set autochdir
+set diffopt+=vertical
 
 " Set persistent undo
 	set undodir=$XDG_CACHE_HOME/nvim/undodir

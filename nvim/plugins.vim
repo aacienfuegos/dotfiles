@@ -13,18 +13,21 @@ Plug 'lervag/vimtex'
 Plug 'hoob3rt/lualine.nvim'
 Plug 'lilydjwg/colorizer'
 Plug 'p00f/nvim-ts-rainbow'
-Plug 'airblade/vim-gitgutter'
 Plug 'shaunsingh/nord.nvim'
 
 "Nerd Tree
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 "Lf
 Plug 'ptzz/lf.vim'
 Plug 'voldikss/vim-floaterm'
+
+" Git
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 "Undo tree
 Plug 'mbbill/undotree'

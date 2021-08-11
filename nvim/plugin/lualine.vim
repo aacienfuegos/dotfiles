@@ -9,8 +9,8 @@ require('lualine').setup {
 		disabled_filetypes = {}
 		},
 	sections = {
-		lualine_b = {'branch'},
 		lualine_a = {'mode'},
+		lualine_b = {'branch'},
 		lualine_c = {'filename'},
 		lualine_x = {'encoding', 'fileformat', 'filetype'},
 		lualine_y = {{'diagnostics', sources = {'nvim_lsp'}}, 'diff'},
@@ -27,6 +27,7 @@ require('lualine').setup {
 	tabline = {},
 	extensions = {
 		'nerdtree',
+		'fugitive',
 		}
 }
 
