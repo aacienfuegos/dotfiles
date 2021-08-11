@@ -4,7 +4,7 @@ require'nvim-treesitter.configs'.setup {
 	highlight = { enable = true },
 	incremental_selection = { enable = true },
 	indent = {enable = true},
-	textobjects = { enable = true }
+	rainbow = { enable = true, extended_mode = true },
 	}
 
 EOF
