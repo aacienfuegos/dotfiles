@@ -7,9 +7,9 @@ alias visudo="sudo EDITOR=nvim visudo"
 
 alias pmix="pulsemixer"
 
-alias ls="exa --icons"
-alias la="exa -a --icons"
-alias ll="exa -lh --icons"
+alias ls="exa --icons --git"
+alias la="ls -a"
+alias ll="ls -lh"
 alias du='du -h'
 alias df='df -h'
 
