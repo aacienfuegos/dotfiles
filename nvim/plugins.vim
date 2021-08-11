@@ -14,7 +14,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'lilydjwg/colorizer'
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'airblade/vim-gitgutter'
-Plug 'arcticicestudio/nord-vim'
+Plug 'shaunsingh/nord.nvim'
 
 "Nerd Tree
 Plug 'preservim/NERDTree'
