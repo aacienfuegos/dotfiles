@@ -10,14 +10,14 @@ Plug 'vimwiki/vimwiki'
 Plug 'lervag/vimtex'
 
 " Colors
-Plug 'itchyny/lightline.vim'
+Plug 'hoob3rt/lualine.nvim'
 Plug 'lilydjwg/colorizer'
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'airblade/vim-gitgutter'
 Plug 'shaunsingh/nord.nvim'
 
 "Nerd Tree
-Plug 'preservim/NERDTree'
+Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
