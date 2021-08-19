@@ -36,7 +36,9 @@ map Q gq
 	inoremap ? ?<c-g>u
 
 " Replace all is aliased to S.
-	nnoremap S :%s//g<Left><Left>
+	nnoremap SS :%s//g<Left><Left>
+	nnoremap Sw "hyiw:%s/<C-r>h//g<left><left>
+	vnoremap S "hy:%s/<C-r>h//g<left><left>
 
 " Perform dot commands over visual blocks:
 	vnoremap . :normal .<CR>
