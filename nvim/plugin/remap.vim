@@ -9,6 +9,11 @@ map Q gq
 	map <C-k> <C-w>k
 	map <C-l> <C-w>l
 
+" Navigate buffers
+	nnoremap <leader><leader> <c-^><CR>
+	nnoremap <leader>j :bprev<CR>
+	nnoremap <leader>k :bnext<CR>
+
 " Y copies to the end of line
 	nnoremap Y y$
 
@@ -22,8 +27,8 @@ map Q gq
 	vnoremap K :m '<-2<CR>gv=gv
 	inoremap <C-j> <esc>:m .+1<CR>==
 	inoremap <C-k> <esc>:m .-2<CR>==
-	nnoremap <leader>j :m .+1<CR>==
-	nnoremap <leader>k :m .-2<CR>==
+	nnoremap <leader>J :m .+1<CR>==
+	nnoremap <leader>K :m .-2<CR>==
 
 " Mark line when doing relative jump
 	nnoremap <expr> k (v:count > 5 ? "m'" . v:count : "") . 'k'
