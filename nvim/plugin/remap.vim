@@ -10,7 +10,7 @@ map Q gq
 	map <C-l> <C-w>l
 
 " Navigate buffers
-	nnoremap <leader><leader> <c-^><CR>
+	nnoremap <leader><tab> <c-^><CR>
 	nnoremap <leader>j :bprev<CR>
 	nnoremap <leader>k :bnext<CR>
 
