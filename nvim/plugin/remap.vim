@@ -40,6 +40,10 @@ map Q gq
 	nnoremap Sw "hyiw:%s/<C-r>h//g<left><left>
 	vnoremap S "hy:%s/<C-r>h//g<left><left>
 
+" Reselect visual block when shifting lines
+	vnoremap > >gv
+	vnoremap < <gv
+
 " Perform dot commands over visual blocks:
 	vnoremap . :normal .<CR>
 
