@@ -15,10 +15,8 @@ Plug 'lilydjwg/colorizer'
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'shaunsingh/nord.nvim'
 
-"Nerd Tree
-Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+" Lua Tree
+Plug 'kyazdani42/nvim-tree.lua'
 
 "Lf
 Plug 'ptzz/lf.vim'
