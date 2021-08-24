@@ -1,4 +1,10 @@
 call plug#begin()
+" Tools
+Plug 'voldikss/vim-floaterm'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
+
 " Markdown
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'iamcco/markdown-preview.vim'
@@ -9,21 +15,14 @@ Plug 'vimwiki/vimwiki'
 "Latex
 Plug 'lervag/vimtex'
 
-" Colors
+" Status line
 Plug 'hoob3rt/lualine.nvim'
-Plug 'lilydjwg/colorizer'
-Plug 'p00f/nvim-ts-rainbow'
-Plug 'shaunsingh/nord.nvim'
 
-" Lua Tree
+" Move around
 Plug 'kyazdani42/nvim-tree.lua'
-
-"Lf
 Plug 'ptzz/lf.vim'
-Plug 'voldikss/vim-floaterm'
 
 " Git
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
@@ -39,17 +38,17 @@ Plug 'norcalli/snippets.nvim'
 Plug 'glepnir/lspsaga.nvim'
 
 " Autocomplete
-" Plug 'Shougo/deoplete.nvim'
-" Plug 'deoplete-plugins/deoplete-lsp'
 Plug 'hrsh7th/nvim-compe'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 
 " Telescope
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'kyazdani42/nvim-web-devicons'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" Colors
+Plug 'lilydjwg/colorizer'
+Plug 'p00f/nvim-ts-rainbow'
+Plug 'shaunsingh/nord.nvim'
 
 call plug#end()
