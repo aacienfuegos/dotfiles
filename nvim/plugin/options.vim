@@ -1,3 +1,4 @@
+set path+=**
 set title
 set bg=light
 set go=a
@@ -18,7 +19,7 @@ set scrolloff=8
 set tabstop=4
 set shiftwidth=4
 set smartindent
-set autochdir
+" set autochdir
 set diffopt+=vertical
 
 " Set persistent undo
@@ -33,5 +34,14 @@ set diffopt+=vertical
 
 " Don't show sudo warning
 	au BufEnter * set noro
+
+" Ignore files
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=**/coverage/*
+set wildignore+=**/node_modules/*
+set wildignore+=**/android/*
+set wildignore+=**/ios/*
+set wildignore+=**/.git/*
 
 colorscheme nord
