@@ -5,5 +5,4 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true;
 
 nvim_lsp.html.setup {
     capabilities = capabilities;
-    on_attach = on_attach,
 }
