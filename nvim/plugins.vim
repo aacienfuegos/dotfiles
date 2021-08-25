@@ -4,6 +4,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
+Plug 'tami5/sql.nvim'
 
 " Markdown
 Plug 'JamshedVesuna/vim-markdown-preview'
@@ -53,6 +54,7 @@ Plug 'nvim-telescope/telescope-dap.nvim'
 Plug 'nvim-telescope/telescope-github.nvim'
 Plug 'nvim-telescope/telescope-media-files.nvim'
 Plug 'nvim-telescope/telescope-symbols.nvim'
+Plug 'nvim-telescope/telescope-frecency.nvim'
 
 " Colors
 Plug 'lilydjwg/colorizer'
