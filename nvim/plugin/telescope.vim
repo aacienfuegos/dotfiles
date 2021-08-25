@@ -7,6 +7,11 @@ nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 " Media files
 nnoremap <leader>fm <cmd> lua require('telescope').extensions.media_files.media_files()<cr>
 
+" Symbols
+nnoremap <leader>fs <cmd> lua require'telescope.builtin'.symbols{ sources = {'emoji', 'gitmoji', 'julia', 'kaomoji'} }<cr>
+nnoremap <leader>f= <cmd> lua require'telescope.builtin'.symbols{ sources = {'math'} }<cr>
+nnoremap <leader>fl <cmd> lua require'telescope.builtin'.symbols{ sources = {'latex'} }<cr>
+
 " Github
 nnoremap <leader>gi <cmd> lua require('telescope').extensions.gh.issues()<cr>
 nnoremap <leader>gr <cmd> lua require('telescope').extensions.gh.pull_request()<cr>
