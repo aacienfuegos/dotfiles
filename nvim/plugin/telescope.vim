@@ -20,7 +20,6 @@ nnoremap <leader>f~ <Cmd>lua require('telescope').extensions.frecency.frecency()
 
 " Git
 nnoremap <leader>fc <cmd> lua require('telescope.builtin').git_commits()<cr>
-nnoremap <leader>gc <cmd> lua require('telescope.builtin').git_bcommits()<cr>
 nnoremap <leader>gb <cmd> lua require('telescope.builtin').git_branches()<cr>
 nnoremap <leader>gs <cmd> lua require('telescope.builtin').git_status()<cr>
 nnoremap <leader>gS <cmd> lua require('telescope.builtin').git_stash()<cr>

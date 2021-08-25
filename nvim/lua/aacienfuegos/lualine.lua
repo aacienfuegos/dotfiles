@@ -25,6 +25,5 @@ require('lualine').setup {
 	tabline = {},
 	extensions = {
 		'nerdtree',
-		'fugitive',
 		}
 }

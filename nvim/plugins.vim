@@ -25,7 +25,7 @@ Plug 'ptzz/lf.vim'
 
 " Git
 Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
+Plug 'TimUntersberger/neogit'
 
 "Undo tree
 Plug 'mbbill/undotree'
