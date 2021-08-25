@@ -33,3 +33,5 @@ obs-studio/*
 
 transmission/*
 !transmission/settings.json
+
+gh/hosts.yml
