@@ -51,6 +51,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope-dap.nvim'
 Plug 'nvim-telescope/telescope-github.nvim'
+Plug 'nvim-telescope/telescope-media-files.nvim'
 
 " Colors
 Plug 'lilydjwg/colorizer'
