@@ -29,6 +29,9 @@ Plug 'tpope/vim-fugitive'
 "Undo tree
 Plug 'mbbill/undotree'
 
+" Dap
+Plug 'mfussenegger/nvim-dap'
+
 " Language support
 Plug 'neovim/nvim-lspconfig'
 Plug 'anott03/nvim-lspinstall'
@@ -46,6 +49,7 @@ Plug 'tpope/vim-surround'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-telescope/telescope-dap.nvim'
 
 " Colors
 Plug 'lilydjwg/colorizer'
