@@ -14,3 +14,22 @@ dateformat = %d/%m/%Y
 longdateformat = %d/%m/%Y
 datetimeformat = %d/%m/%Y %H:%M
 longdatetimeformat = %d/%m/%Y %H:%M
+
+[keybindings]
+up = 'up', 'k'
+down = 'down', 'j'
+right = 'right', 'l', ' '
+left = 'left', 'h', 'backspace'
+new = 'n'
+delete = 'd'
+view = 'enter'
+external_edit = 'E'
+today = 't'
+save = 'ctrl s'
+duplicate = 'p'
+export = 'e'
+mark = 'v'
+other = 'o'
+search = '/'
+log = 'L'
+quit = 'q', 'Q'
