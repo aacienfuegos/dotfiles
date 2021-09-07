@@ -41,6 +41,7 @@ Plug 'nvim-lua/lsp-status.nvim'
 Plug 'nvim-lua/completion-nvim'
 Plug 'norcalli/snippets.nvim'
 Plug 'glepnir/lspsaga.nvim'
+Plug 'psf/black'
 
 " Autocomplete
 Plug 'hrsh7th/nvim-compe'

@@ -1,6 +1,9 @@
 require'nvim-treesitter.configs'.setup {
 	highlight = { enable = true },
 	incremental_selection = { enable = true },
-	indent = {enable = true},
+	indent = {
+		enable = true,
+		disable = {"python"}
+	},
 	rainbow = { enable = true, extended_mode = true },
 	}
