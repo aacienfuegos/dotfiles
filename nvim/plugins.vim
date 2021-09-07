@@ -18,6 +18,7 @@ Plug 'lervag/vimtex'
 
 " Status line
 Plug 'hoob3rt/lualine.nvim'
+Plug 'nvim-lua/lsp-status.nvim'
 
 " Move around
 Plug 'kyazdani42/nvim-tree.lua'
