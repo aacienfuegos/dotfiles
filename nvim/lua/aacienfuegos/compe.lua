@@ -14,14 +14,15 @@ require'compe'.setup {
   documentation = true;
 
   source = {
-    path = true;
-	buffer = true;
-	spell = true;
-	calc = {menu = "[∑]"};
-	tags = true;
-    nvim_lsp = {menu = ""};
-    nvim_lua = {menu = "[]"};
-    treesitter = {menu = "[滑]"};
+    path = true,
+	buffer = true,
+	spell = true,
+	calc = {menu = "[∑]"},
+	tags = true,
+    nvim_lsp = {menu = ""},
+    nvim_lua = {menu = "[]"},
+    treesitter = {menu = "[滑]"},
+    neorg = {menu = "𝒩"},
   };
 }
 

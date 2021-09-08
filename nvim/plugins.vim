@@ -13,8 +13,12 @@ Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 Plug 'vimwiki/vimwiki'
 
-"Latex
+" Latex
 Plug 'lervag/vimtex'
+
+" Notes
+Plug 'vhyrro/neorg'
+Plug 'vhyrro/neorg-telescope'
 
 " Status line
 Plug 'hoob3rt/lualine.nvim'

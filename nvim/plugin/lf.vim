@@ -1,5 +1,5 @@
 let g:lf_map_keys = 0
-map <leader>o :Lf<CR>
+map <leader>r :Lf<CR>
 
 " Open lf instead of NERDTree
 let g:NERDTreeHijackNetrw = 0
