@@ -13,6 +13,8 @@ flameshot/*
 menus/*
 nvim/plugged/*
 nvim/autoload/*
+mbsync/*
+okularrc
 pulse/*
 *.secret
 shell/privaterc
