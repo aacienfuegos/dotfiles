@@ -1,6 +1,6 @@
 # vim: filetype=neomuttrc
 # muttrc file for account andres.acremades@alumnos.upm.es
-set realname = "andres.acremades"
+set realname = "Andrés Álvarez de Cienfuegos"
 set from = "andres.acremades@alumnos.upm.es"
 set sendmail = "msmtp -a andres.acremades@alumnos.upm.es"
 alias me andres.acremades <andres.acremades@alumnos.upm.es>
