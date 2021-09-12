@@ -10,16 +10,18 @@ coc/*
 configstore/*
 dconf/*
 flameshot/*
+mbsync/*
 menus/*
+msmtp/*
 nvim/plugged/*
 nvim/autoload/*
-mbsync/*
 okularrc
 pulse/*
 *.secret
 shell/privaterc
 skypeforlinux/*
 teams/*
+wireshark/*
 zoomus.conf
 zsh/.zcompdump
 
