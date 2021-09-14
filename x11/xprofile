@@ -4,7 +4,6 @@
 # If you use startx/xinit like a Chad, this file will also be sourced.
 
 setdisplay &	# Set default displays and set wallpaper
-dwmblocks & 	# Start dwm status bar
 xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources &	# Xresources colors/settings
 picom &		# picom for transparency
 #sxhkd & 		# hotkey daemon
@@ -13,7 +12,9 @@ mopidy &		# mopidy music daemon
 setkeyboard &
 unclutter &		# Remove mouse when idle
 syndaemon -K -i 0.5 -R -d & 	# Block touchpad while typing
-pulseaudio --start 		# Start pulseaudio
+pulseaudio --start &	# Start pulseaudio
+
+dwmblocks & 	# Start dwm status bar
 
 # Start Nextcloud
 nextcloud --background &
