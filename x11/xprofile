@@ -10,7 +10,7 @@ picom &		# picom for transparency
 dunst &			# dunst for notifications
 mopidy &		# mopidy music daemon
 setkeyboard &
-unclutter &		# Remove mouse when idle
+unclutter --timeout 10 &	# Remove mouse when idle
 syndaemon -K -i 0.5 -R -d & 	# Block touchpad while typing
 pulseaudio --start &	# Start pulseaudio
 
