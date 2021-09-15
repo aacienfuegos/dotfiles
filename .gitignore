@@ -15,7 +15,7 @@ menus/*
 msmtp/*
 nvim/plugged/*
 nvim/autoload/*
-okularrc
+okular*
 pulse/*
 *.secret
 shell/privaterc
