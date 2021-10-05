@@ -1,9 +1,6 @@
 local tree_cb = require'nvim-tree.config'.nvim_tree_callback
 
--- disable default mappings
-vim.g.nvim_tree_disable_default_keybindings = 1
-
-vim.g.nvim_tree_bindings = {
+local list = {
 	{ key = {"<CR>", "o", "<2-LeftMouse>"}, cb = tree_cb("edit") },
 	{ key = {"<2-RightMouse>", "<C-]>"},    cb = tree_cb("cd") },
 	{ key = {"v", "<C-v>"},                 cb = tree_cb("vsplit") },
@@ -37,3 +34,5 @@ vim.g.nvim_tree_bindings = {
 	{ key = "q",                            cb = tree_cb("close") },
 	{ key = "g?",                           cb = tree_cb("toggle_help") },
 }
+
+return list
