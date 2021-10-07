@@ -12,7 +12,7 @@ mopidy &		# mopidy music daemon
 setkeyboard &
 unclutter --timeout 10 &	# Remove mouse when idle
 syndaemon -K -i 0.5 -R -d & 	# Block touchpad while typing
-pulseaudio --start &	# Start pulseaudio
+# pulseaudio --start &	# Start pulseaudio
 
 dwmblocks & 	# Start dwm status bar
 
