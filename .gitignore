@@ -9,6 +9,7 @@ GIMP/*
 coc/*
 configstore/*
 dconf/*
+discord/*
 flameshot/*
 mbsync/*
 menus/*
