@@ -46,9 +46,17 @@ Plug 'nvim-lua/completion-nvim'
 Plug 'norcalli/snippets.nvim'
 Plug 'glepnir/lspsaga.nvim'
 Plug 'psf/black'
+Plug 'onsails/lspkind-nvim'
 
 " Autocomplete
-Plug 'hrsh7th/nvim-compe'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/nvim-cmp'
+
+" Snippets
+Plug 'L3MON4D3/LuaSnip'
+
+" tpope
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 

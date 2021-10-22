@@ -1,5 +1,5 @@
-require("aacienfuegos.compe")
 require("aacienfuegos.keybinds")
+require("aacienfuegos.cmp")
 require("aacienfuegos.lsp")
 require("aacienfuegos.lspsaga")
 require("aacienfuegos.lspstatus")
