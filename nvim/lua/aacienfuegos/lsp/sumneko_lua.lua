@@ -16,7 +16,6 @@ table.insert(runtime_path, "lua/?/init.lua")
 require'lspconfig'.sumneko_lua.setup {
 	cmd = {"lua-language-server"};
 	on_attach = require('lsp-status').on_attach;
-	-- capabilities = require('lsp-status').capabilities;
 	settings = {
 		Lua = {
 			runtime = {
