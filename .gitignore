@@ -11,6 +11,7 @@ configstore/*
 dconf/*
 discord/*
 flameshot/*
+github-copilot/*
 mbsync/*
 menus/*
 msmtp/*
