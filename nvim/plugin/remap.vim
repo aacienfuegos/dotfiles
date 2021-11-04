@@ -71,3 +71,6 @@ map Q gq
 
 " Save file as sudo on files that require root permission
 	ab w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+
+" Insert blank line
+	nnoremap <leader>o o<esc>
