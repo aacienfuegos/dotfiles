@@ -58,7 +58,7 @@ map Q gq
 	vnoremap . :normal .<CR>
 
 " Spell-check
-	map <leader>s :setlocal spell! spelllang=en_us,es_es<CR>
+	map <leader>s :setlocal spell!<CR>
 
 " Compile document, be it groff/LaTeX/markdown/etc.
 	map <leader>c :ab! \| !compiler "<c-r>%"<CR>

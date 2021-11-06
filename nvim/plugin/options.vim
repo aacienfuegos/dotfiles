@@ -35,6 +35,10 @@ set diffopt+=vertical
 " Don't show sudo warning
 	au BufEnter * set noro
 
+" Spell checking
+	set spelllang=en_us,es_es
+	set spellfile=$XDG_DATA_HOME/nvim/spell/custom.utf-8.add
+
 " Ignore files
 set wildignore+=*.pyc
 set wildignore+=*_build/*
