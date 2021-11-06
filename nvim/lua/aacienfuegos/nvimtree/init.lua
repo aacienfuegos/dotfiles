@@ -15,7 +15,6 @@ require'nvim-tree'.setup {
 	open_on_tab         = true,
 	hijack_cursor       = false,
 	update_cwd          = false,
-	lsp_diagnostics     = true,
 	update_focused_file = {
 		enable      = true,
 		update_cwd  = true,
@@ -24,6 +23,16 @@ require'nvim-tree'.setup {
 	system_open = {
 		cmd  = nil,
 		args = {}
+	},
+	diagnostics     = {
+		enable = true,
+		icons = {
+			error   = '',
+			warning = '',
+			info    = '',
+			hint    = '',
+			ok      = '',
+		},
 	},
 	view = {
 		width = 30,
