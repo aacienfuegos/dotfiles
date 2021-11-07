@@ -1,10 +1,12 @@
 require("aacienfuegos.keybinds")
+
 require("aacienfuegos.cmp")
 require("aacienfuegos.copilot")
 require("aacienfuegos.lsp")
 require("aacienfuegos.lspsaga")
 require("aacienfuegos.lspstatus")
 require("aacienfuegos.lualine")
+require("aacienfuegos.luasnip")
 require("aacienfuegos.neogit")
 require("aacienfuegos.neorg")
 require("aacienfuegos.nord_theme")
