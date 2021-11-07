@@ -4,10 +4,10 @@
 map Q gq
 
 " Shortcutting split navigation, saving a keypress:
-	map <C-h> <C-w>h
-	map <C-j> <C-w>j
-	map <C-k> <C-w>k
-	map <C-l> <C-w>l
+	nnoremap <C-h> <C-w>h
+	nnoremap <C-j> <C-w>j
+	nnoremap <C-k> <C-w>k
+	nnoremap <C-l> <C-w>l
 
 " Navigate buffers
 	nnoremap <leader><tab> <c-^><CR>
@@ -30,8 +30,8 @@ map Q gq
 " Move text
 	vnoremap J :m '>+1<CR>gv=gv
 	vnoremap K :m '<-2<CR>gv=gv
-	inoremap <C-j> <esc>:m .+1<CR>==
-	inoremap <C-k> <esc>:m .-2<CR>==
+	" inoremap <C-j> <esc>:m .+1<CR>==
+	" inoremap <C-k> <esc>:m .-2<CR>==
 	nnoremap <leader>j :m .+1<CR>==
 	nnoremap <leader>k :m .-2<CR>==
 
