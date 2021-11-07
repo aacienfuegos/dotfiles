@@ -78,6 +78,6 @@ Plug 'nvim-telescope/telescope-frecency.nvim'
 " Colors
 Plug 'lilydjwg/colorizer'
 Plug 'p00f/nvim-ts-rainbow'
-Plug 'shaunsingh/nord.nvim'
+Plug 'tjdevries/colorbuddy.nvim'
 
 call plug#end()
