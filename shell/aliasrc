@@ -30,6 +30,7 @@ alias py="python"
 # Git
 alias gs='git status'
 alias gd='git diff $@'
+alias gck='git checkout $@'
 alias ga='git add $@'
 alias gA='git add -A'
 alias gc='printf "Enter commit message: "; read msg; if [ -n "$msg" ]; then git commit -m $msg; else git commit; fi'
