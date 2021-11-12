@@ -16,8 +16,9 @@ syndaemon -K -i 0.5 -R -d & 	# Block touchpad while typing
 
 dwmblocks & 	# Start dwm status bar
 
-# Start Nextcloud
+# Start sync services
 nextcloud --background &
+onedrive --monitor &
 
 # Fix keyring
 source /etc/X11/xinit/xinitrc.d/50-systemd-user.sh
