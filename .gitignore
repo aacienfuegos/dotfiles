@@ -41,3 +41,7 @@ transmission/*
 !transmission/settings.json
 
 gh/hosts.yml
+
+onedrive/*
+!onedrive/config
+!onedrive/sync_list
