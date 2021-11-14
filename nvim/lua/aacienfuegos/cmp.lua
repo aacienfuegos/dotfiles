@@ -49,6 +49,7 @@ cmp.setup({
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
 		{ name = 'luasnip' },
+		{ name = 'neorg' },
 		{ name = 'path' },
 		{ name = 'buffer' },
 		{ name = 'copilot' },
@@ -61,6 +62,7 @@ cmp.setup({
 			buffer = "[buf]",
 			nvim_lsp = "[LSP]",
 			luasnip = "[snip]",
+			neorg = "[norg]",
 			latex_symbols = "[tex]",
 			path = "[path]",
 			copilot = "[co]",
