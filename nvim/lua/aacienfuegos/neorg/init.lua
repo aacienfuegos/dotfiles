@@ -12,7 +12,7 @@ require('neorg').setup {
 		["core.norg.dirman"] = { -- Manage your directories with Neorg
 			config = {
 				workspaces = {
-					notes = "~/ncloud/Notes/notes"
+					notes = "~/notes"
 				},
 				autodetect = true,
 				autochdir = true,
@@ -20,7 +20,7 @@ require('neorg').setup {
 		},
 		["core.norg.completion"] = {
 			config = {
-				engine = "nvim-compe"
+				engine = "nvim-cmp"
 			}
 		},
 		["core.integrations.telescope"] = {}, -- Enable the telescope module
