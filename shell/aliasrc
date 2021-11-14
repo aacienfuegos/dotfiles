@@ -26,6 +26,7 @@ alias ufws="sudo ufw status numbered"
 alias mpow="sh $HOME/.scripts/mpow.sh"
 alias msfconsole="msfconsole --quiet -x \"db_connect $USER@msf\""
 alias py="python"
+alias za="zathura"
 
 # Git
 alias gs='git status'
