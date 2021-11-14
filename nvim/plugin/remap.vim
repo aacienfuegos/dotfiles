@@ -73,4 +73,4 @@ map Q gq
 	ab w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Insert blank line
-	nnoremap <leader>o o<esc>
+	nnoremap <CR> o<esc>
