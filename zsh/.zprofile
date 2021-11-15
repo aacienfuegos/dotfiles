@@ -7,10 +7,6 @@
 
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
-# Adds raspberry pi tools to $PATH
-export PATH="$PATH:$HOME/.local/src/raspi_tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin"
-# Adds wine pi tood to $PATH
-export PATH="$PATH:$HOME/.local/bin/wine"
 
 # Spotifyd needs this for some reason i guess
 export RUST_BACKTRACE=1
