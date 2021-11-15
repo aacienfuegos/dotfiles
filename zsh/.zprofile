@@ -6,7 +6,7 @@
 # to clean up.
 
 # Adds `~/.local/bin` to $PATH
-export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+export PATH="$PATH:${$(find ~/.local/bin -type d -not -path '*\/.git*' -printf %p:)%%:}"
 
 # Spotifyd needs this for some reason i guess
 export RUST_BACKTRACE=1
