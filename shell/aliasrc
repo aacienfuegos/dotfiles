@@ -2,8 +2,11 @@
 alias poff="sudo poweroff"
 alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
-alias p="paru"
 alias visudo="sudo EDITOR=nvim visudo"
+
+alias p="paru"
+alias pS="paru -S"
+alias psu="paru -Syu"
 
 alias pmix="pulsemixer"
 
