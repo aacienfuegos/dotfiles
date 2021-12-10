@@ -1,3 +1,5 @@
+require("aacienfuegos.plugins")
+
 require("aacienfuegos.keybinds")
 
 require("aacienfuegos.cmp")

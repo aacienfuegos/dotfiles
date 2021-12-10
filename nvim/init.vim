@@ -2,10 +2,6 @@
 " properly set to work with the Vim-related packages.
 runtime! archlinux.vim
 
-" Load list of plugins
-source $XDG_CONFIG_HOME/nvim/plugins.vim
-
-
 let mapleader=" "
 
 lua require("aacienfuegos")
