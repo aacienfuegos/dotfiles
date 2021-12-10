@@ -1,5 +1,3 @@
-require("aacienfuegos.plugins")
-
 require("aacienfuegos.keybinds")
 
 require("aacienfuegos.cmp")
@@ -13,5 +11,6 @@ require("aacienfuegos.neogit")
 require("aacienfuegos.neorg")
 require("aacienfuegos.colorscheme")
 require("aacienfuegos.nvimtree")
+require("aacienfuegos.plugins")
 require("aacienfuegos.telescope")
 require("aacienfuegos.treesitter")
