@@ -18,7 +18,7 @@ require('lualine').setup {
 		lualine_b = {'branch'},
 		lualine_c = {'filename', LspStatus},
 		lualine_x = {'encoding', 'fileformat', 'filetype'},
-		lualine_y = {{'diagnostics', sources = {'nvim_lsp'}}, 'diff'},
+		lualine_y = {{'diagnostics', sources = {'nvim_diagnostic'}}, 'diff'},
 		lualine_z = {'location'}
 		},
 	inactive_sections = {
