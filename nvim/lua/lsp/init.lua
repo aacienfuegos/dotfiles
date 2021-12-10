@@ -1,0 +1,8 @@
+require('lsp.bashls')
+require('lsp.cmake')
+require('lsp.css')
+require('lsp.html')
+require('lsp.pyright')
+require('lsp.rust_analyzer')
+require('lsp.sumneko_lua')
+require('lsp.tsserver')
