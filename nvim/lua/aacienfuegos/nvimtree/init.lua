@@ -24,6 +24,10 @@ require'nvim-tree'.setup {
 		cmd  = nil,
 		args = {}
 	},
+	git = {
+		enable = true,
+		ignore = true,
+	},
 	diagnostics     = {
 		enable = true,
 		icons = {
