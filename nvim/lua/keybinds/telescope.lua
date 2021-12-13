@@ -7,8 +7,12 @@ vim.api.nvim_set_keymap("n", "<leader>fh", "<cmd>lua require('telescope.builtin'
 -- Media files
 vim.api.nvim_set_keymap("n", "<leader>fm", "<cmd>lua require('telescope').extensions.media_files.media_files()<cr>", {noremap = true, silent = true})
 
+-- LSP
+vim.api.nvim_set_keymap("n", "<leader>fd", "<cmd>lua require('telescope.builtin').lsp_document_symbols()<cr>", {noremap = true, silent = true})
+vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>lua require('telescope.builtin').diagnostics()<cr>", {noremap = true, silent = true})
+
 -- Treesitter
-vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>lua require('telescope.builtin').treesitter()<cr>", {noremap = true, silent = true})
+-- vim.api.nvim_set_keymap("n", "<leader>ft", "<cmd>lua require('telescope.builtin').treesitter()<cr>", {noremap = true, silent = true})
 
 -- Symbols
 vim.api.nvim_set_keymap("n", "<leader>fe", "<cmd>lua require'telescope.builtin'.symbols{ sources = {'emoji', 'gitmoji', 'julia', 'kaomoji'} }<cr>", {noremap = true, silent = true})
