@@ -28,7 +28,7 @@ return require("packer").startup(function(use)
 	use "ptzz/lf.vim"
 
 	-- Git
-	use "airblade/vim-gitgutter"
+	use "lewis6991/gitsigns.nvim"
 	use "TimUntersberger/neogit"
 
 	--Undo tree
