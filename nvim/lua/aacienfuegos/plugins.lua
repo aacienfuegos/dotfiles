@@ -10,7 +10,6 @@ return require("packer").startup(function(use)
 	use "JamshedVesuna/vim-markdown-preview"
 	use "iamcco/markdown-preview.vim"
 	use "iamcco/mathjax-support-for-mkdp"
-	use "iamcco/markdown-preview.vim"
 	use "vimwiki/vimwiki"
 
 	-- Latex
@@ -44,6 +43,9 @@ return require("packer").startup(function(use)
 	use "glepnir/lspsaga.nvim"
 	use "psf/black"
 	use "onsails/lspkind-nvim"
+
+	-- Syntax highlighting
+	use {"folke/trouble.nvim"}
 
 	-- Snippets
 	use "L3MON4D3/LuaSnip"
