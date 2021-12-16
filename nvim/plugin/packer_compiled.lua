@@ -210,6 +210,7 @@ _G.packer_plugins = {
     url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-terminal.lua"] = {
+    config = { "\27LJ\1\0026\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\rterminal\frequire\0" },
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-terminal.lua",
     url = "https://github.com/norcalli/nvim-terminal.lua"
@@ -304,6 +305,12 @@ _G.packer_plugins = {
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-floaterm",
     url = "https://github.com/voldikss/vim-floaterm"
   },
+  ["vim-inyoface"] = {
+    config = { "\27LJ\1\2h\0\0\5\0\6\0\t4\0\0\0007\0\1\0007\0\2\0%\1\3\0%\2\4\0%\3\5\0002\4\0\0>\0\5\1G\0\1\0\28<Plug>(InYoFace_Toggle)\15<leader>cc\6n\20nvim_set_keymap\bapi\bvim\0" },
+    loaded = true,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-inyoface",
+    url = "https://github.com/tjdevries/vim-inyoface"
+  },
   ["vim-markdown-preview"] = {
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-markdown-preview",
@@ -336,6 +343,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: vim-inyoface
+time([[Config for vim-inyoface]], true)
+try_loadstring("\27LJ\1\2h\0\0\5\0\6\0\t4\0\0\0007\0\1\0007\0\2\0%\1\3\0%\2\4\0%\3\5\0002\4\0\0>\0\5\1G\0\1\0\28<Plug>(InYoFace_Toggle)\15<leader>cc\6n\20nvim_set_keymap\bapi\bvim\0", "config", "vim-inyoface")
+time([[Config for vim-inyoface]], false)
+-- Config for: nvim-terminal.lua
+time([[Config for nvim-terminal.lua]], true)
+try_loadstring("\27LJ\1\0026\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\rterminal\frequire\0", "config", "nvim-terminal.lua")
+time([[Config for nvim-terminal.lua]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)

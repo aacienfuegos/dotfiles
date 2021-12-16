@@ -77,6 +77,12 @@ return require("packer").startup(function(use)
 	-- Comments
 	use "numToStr/Comment.nvim"
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
+    use {
+      "tjdevries/vim-inyoface",
+      config = function()
+        vim.api.nvim_set_keymap("n", "<leader>cc", "<Plug>(InYoFace_Toggle)", {})
+      end,
+    }
 
 	-- tpope
 	use "tpope/vim-surround"
