@@ -1,6 +1,7 @@
 require("aacienfuegos.keybinds")
 
 require("aacienfuegos.cmp")
+require("aacienfuegos.commentary")
 require("aacienfuegos.copilot")
 require("aacienfuegos.lspsaga")
 require("aacienfuegos.lspstatus")

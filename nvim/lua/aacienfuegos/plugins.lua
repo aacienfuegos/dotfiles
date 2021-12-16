@@ -62,8 +62,10 @@ return require("packer").startup(function(use)
 	use "hrsh7th/cmp-copilot"
 	use "saadparwaiz1/cmp_luasnip"
 
+	-- Comments
+	use "numToStr/Comment.nvim"
+
 	-- tpope
-	use "tpope/vim-commentary"
 	use "tpope/vim-surround"
 
 	-- Telescope
