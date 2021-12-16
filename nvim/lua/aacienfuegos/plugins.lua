@@ -22,6 +22,9 @@ return require("packer").startup(function(use)
 	-- Status line
 	use "hoob3rt/lualine.nvim"
 
+	-- Notifications
+	use "rcarriga/nvim-notify"
+
 	-- Move around
 	use "kyazdani42/nvim-tree.lua"
 	use "ptzz/lf.vim"

@@ -1,4 +1,5 @@
 require("aacienfuegos.keybinds")
+require("aacienfuegos.notify")
 
 require("aacienfuegos.cmp")
 require("aacienfuegos.comment")

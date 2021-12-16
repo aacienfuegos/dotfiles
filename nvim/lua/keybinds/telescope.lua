@@ -33,3 +33,6 @@ vim.api.nvim_set_keymap("n", "<leader>gi", "<cmd>lua require('telescope').extens
 vim.api.nvim_set_keymap("n", "<leader>gr", "<cmd>lua require('telescope').extensions.gh.pull_request()<cr>", {noremap = true, silent = true})
 -- vim.api.nvim_set_keymap("n", "<leader>gg", "<cmd>lua require('telescope').extensions.gh.gist()<cr>", {noremap = true, silent = true})
 vim.api.nvim_set_keymap("n", "<leader>gx", "<cmd>lua require('telescope').extensions.gh.run()<cr>", {noremap = true, silent = true})
+
+-- Notifications
+vim.api.nvim_set_keymap("n", "<leader>fn", "<cmd>lua require('telescope').extensions.notify.notify()<cr>", {noremap = true, silent = true})
