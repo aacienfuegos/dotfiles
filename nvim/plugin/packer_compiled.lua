@@ -209,6 +209,11 @@ _G.packer_plugins = {
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
+  ["nvim-terminal.lua"] = {
+    loaded = true,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-terminal.lua",
+    url = "https://github.com/norcalli/nvim-terminal.lua"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",

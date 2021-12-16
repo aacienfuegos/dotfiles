@@ -93,6 +93,12 @@ return require("packer").startup(function(use)
 
 	-- Colors
 	use "norcalli/nvim-colorizer.lua"
+	use {
+		"norcalli/nvim-terminal.lua",
+		config = function()
+			require("terminal").setup()
+		end,
+	}
 	use "p00f/nvim-ts-rainbow"
 	use "tjdevries/colorbuddy.nvim"
 
