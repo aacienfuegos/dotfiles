@@ -304,6 +304,11 @@ _G.packer_plugins = {
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-markdown-preview",
     url = "https://github.com/JamshedVesuna/vim-markdown-preview"
   },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-surround",

@@ -25,6 +25,15 @@ return require("packer").startup(function(use)
 	-- Notifications
 	use "rcarriga/nvim-notify"
 
+	-- Start screen
+	use {
+		"mhinz/vim-startify",
+		cmd = { "SLoad", "SSave" },
+		config = function()
+			vim.g.startify_disable_at_vimenter = true
+		end,
+	}
+
 	-- Move around
 	use "kyazdani42/nvim-tree.lua"
 	use "ptzz/lf.vim"
