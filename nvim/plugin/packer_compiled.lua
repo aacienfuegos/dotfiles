@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
-  colorizer = {
-    loaded = true,
-    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/colorizer",
-    url = "https://github.com/lilydjwg/colorizer"
-  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -188,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-dap"] = {
     loaded = true,
@@ -305,8 +305,12 @@ _G.packer_plugins = {
     url = "https://github.com/JamshedVesuna/vim-markdown-preview"
   },
   ["vim-startify"] = {
-    loaded = true,
-    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-startify",
+    commands = { "SLoad", "SSave" },
+    config = { "\27LJ\1\2>\0\0\2\0\3\0\0054\0\0\0007\0\1\0)\1\2\0:\1\2\0G\0\1\0!startify_disable_at_vimenter\6g\bvim\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/opt/vim-startify",
     url = "https://github.com/mhinz/vim-startify"
   },
   ["vim-surround"] = {
@@ -327,6 +331,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+
+-- Command lazy-loads
+time([[Defining lazy-load commands]], true)
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file SLoad lua require("packer.load")({'vim-startify'}, { cmd = "SLoad", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+pcall(vim.cmd, [[command -nargs=* -range -bang -complete=file SSave lua require("packer.load")({'vim-startify'}, { cmd = "SSave", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args>, mods = "<mods>" }, _G.packer_plugins)]])
+time([[Defining lazy-load commands]], false)
+
 if should_profile then save_profiles() end
 
 end)

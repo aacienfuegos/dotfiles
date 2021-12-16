@@ -92,7 +92,7 @@ return require("packer").startup(function(use)
 	use "nvim-telescope/telescope-frecency.nvim"
 
 	-- Colors
-	use "lilydjwg/colorizer"
+	use "norcalli/nvim-colorizer.lua"
 	use "p00f/nvim-ts-rainbow"
 	use "tjdevries/colorbuddy.nvim"
 

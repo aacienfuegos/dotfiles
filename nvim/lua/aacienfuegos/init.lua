@@ -2,6 +2,7 @@ require("aacienfuegos.keybinds")
 require("aacienfuegos.notify")
 
 require("aacienfuegos.cmp")
+require("aacienfuegos.colorizer")
 require("aacienfuegos.comment")
 require("aacienfuegos.copilot")
 require("aacienfuegos.lspsaga")
