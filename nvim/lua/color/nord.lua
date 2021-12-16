@@ -41,7 +41,7 @@ Group.new('TabLineSeparator', colors.nord_2, colors.none)
 Group.new('Conceal',             colors.nord_3_light, colors.none)
 Group.new('VertSplit', colors.nord_3, colors.none)
 
-Group.new('Normal',         colors.bg,         colors.none)
+Group.new('Normal',         colors.none,         colors.none)
 Group.new('Function',       colors.nord_8,       colors.none,    styles.NONE)
 Group.new('Error',          colors.nord_11,      colors.none,    styles.bold)
 Group.new('ErrorMsg',       colors.nord_5,       colors.nord_11, styles.bold)
