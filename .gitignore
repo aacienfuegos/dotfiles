@@ -48,3 +48,7 @@ onedrive/*
 
 kdeconnect/*
 !kdeconnect/config
+
+filezilla/*
+filezilla/filezilla.xml
+filezilla/layout.xml
