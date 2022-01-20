@@ -87,9 +87,12 @@ return require("packer").startup(function(use)
 	-- tpope
 	use "tpope/vim-surround"
 
+	-- TreeSitter
+	use {"nvim-treesitter/nvim-treesitter", run = "TSUpdate"}
+	use "nvim-treesitter/nvim-treesitter-textobjects"
+
 	-- Telescope
 	use "nvim-telescope/telescope.nvim"
-	use {"nvim-treesitter/nvim-treesitter", run = "TSUpdate"}
 	use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 	use "nvim-telescope/telescope-dap.nvim"
 	use "nvim-telescope/telescope-github.nvim"
