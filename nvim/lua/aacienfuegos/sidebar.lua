@@ -6,8 +6,16 @@ require("sidebar-nvim").setup({
 	initial_width = 30,
 	hide_statusline = true,
 	update_interval = 1000,
-	sections = { "datetime", "todos", "git", "diagnostics", "containers" },
+	sections = {
+		"datetime",
+		"todos",
+		"git",
+		"containers",
+		"diagnostics",
+		require("dap-sidebar-nvim.breakpoints")
+	},
 	section_separator = "-----",
+	disable_closing_prompt = true,
 	containers = {
 		attach_shell = "/bin/sh",
 		show_all = true,
@@ -23,5 +31,7 @@ require("sidebar-nvim").setup({
 	todos = {
 		ignored_paths = { "~" }
 	},
-	disable_closing_prompt = true
+	dap = {
+		icon = ""
+	},
 })

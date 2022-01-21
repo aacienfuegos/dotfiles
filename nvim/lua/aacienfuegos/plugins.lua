@@ -48,6 +48,7 @@ return require("packer").startup(function(use)
 
 	-- Dap
 	use "mfussenegger/nvim-dap"
+	use "sidebar-nvim/sections-dap"
 
 	-- Language support
 	use "neovim/nvim-lspconfig"
