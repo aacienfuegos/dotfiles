@@ -37,6 +37,7 @@ return require("packer").startup(function(use)
 	-- Move around
 	use "kyazdani42/nvim-tree.lua"
 	use "ptzz/lf.vim"
+	use "sidebar-nvim/sidebar.nvim"
 
 	-- Git
 	use "lewis6991/gitsigns.nvim"
