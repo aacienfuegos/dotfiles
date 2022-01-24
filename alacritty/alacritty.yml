@@ -1,8 +1,6 @@
 env:
   TERM: xterm-256color
 
-background_opacity: 0.9
-
 font:
   offset:
     y: 1
@@ -15,7 +13,9 @@ font:
     family: monospace
     style: Regular
   size: 12
+
 window:
+  opacity: 0.9
   padding:
     x: 3
 
