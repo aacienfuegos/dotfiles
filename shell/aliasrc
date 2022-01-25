@@ -4,9 +4,11 @@ alias poweroff="sudo poweroff"
 alias reboot="sudo reboot"
 alias visudo="sudo EDITOR=nvim visudo"
 
+# Package install
 alias p="paru"
 alias pS="paru -S"
 alias psu="paru -Syu"
+alias pr="paru -Rs"
 
 alias pmix="pulsemixer"
 
