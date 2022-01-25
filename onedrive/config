@@ -8,7 +8,7 @@
 sync_dir = "~/onedrive"
 skip_file = "~*|.~*|*.tmp"
 monitor_interval = "120"
-# skip_dir = ""
+skip_dir = "node_modules"
 log_dir = "/var/log/onedrive/"
 # drive_id = ""
 # upload_only = "false"
