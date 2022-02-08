@@ -8,7 +8,7 @@ xrdb ${XDG_CONFIG_HOME:-$HOME/.config}/x11/xresources &	# Xresources colors/sett
 picom &		# picom for transparency
 #sxhkd & 		# hotkey daemon
 dunst &			# dunst for notifications
-mopidy &		# mopidy music daemon
+setsid -f mopidy &		# mopidy music daemon
 setkeyboard &
 unclutter --timeout 10 &	# Remove mouse when idle
 syndaemon -K -i 0.5 -R -d & 	# Block touchpad while typing
