@@ -2,7 +2,7 @@
 source /usr/share/mutt-wizard/mutt-wizard.muttrc
 
 # Custom config
-set query_command= "khard email --parsable %s"
+set query_command = "khard email --parsable '%s'"
 
 # Keybinds
 source /home/aacienfuegos/.config/mutt/accounts/1-andres.acienfuegos@gmail.com.muttrc
