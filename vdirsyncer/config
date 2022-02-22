@@ -5,8 +5,9 @@ status_path = "~/.local/share/vdirsyncer/status/"
 
 [pair calendars]
 a = "calendars_local"
-b = "calendars_remote"
+b = "calendars_google"
 collections = ["from a", "from b"]
+conflict_resolution = "b wins"
 metadata = ["color"]
 
 [storage calendars_local]
@@ -14,17 +15,24 @@ type = "filesystem"
 path = "~/.local/share/calendars/"
 fileext = ".ics"
 
-[storage calendars_remote]
-type = "caldav"
-url.fetch = ["command", "vdirsyncer_get", "nextcloud", "url", "calendar"]
-username.fetch = ["command", "vdirsyncer_get", "nextcloud", "username"]
-password.fetch = ["command", "vdirsyncer_get", "nextcloud", "password"]
+[storage calendars_google]
+type = "google_calendar"
+token_file = "~/.local/share/vdirsyncer/token/google_calendar"
+client_id.fetch = ["command", "secret-tool", "lookup", "server", "google", "service", "vdirsyncer", "key", "client_id"]
+client_secret.fetch = ["command", "secret-tool", "lookup", "server", "google", "service", "vdirsyncer", "key", "client_secret"]
+
+# [storage calendars_nextcloud]
+# type = "caldav"
+# url.fetch = ["command", "vdirsyncer_get", "nextcloud", "url", "calendar"]
+# username.fetch = ["command", "vdirsyncer_get", "nextcloud", "username"]
+# password.fetch = ["command", "vdirsyncer_get", "nextcloud", "password"]
 
 
 ## Contacts
 [pair contacts]
 a = "contacts_local"
-b = "contacts_remote"
+b = "contacts_google"
+conflict_resolution = "b wins"
 collections = ["from a", "from b"]
 
 [storage contacts_local]
@@ -32,8 +40,14 @@ type = "filesystem"
 path = "~/.local/share/contacts/"
 fileext = ".vcf"
 
-[storage contacts_remote]
-type = "carddav"
-url.fetch = ["command", "vdirsyncer_get", "nextcloud", "url", "calendar"]
-username.fetch = ["command", "vdirsyncer_get", "nextcloud", "username"]
-password.fetch = ["command", "vdirsyncer_get", "nextcloud", "password"]
+[storage contacts_google]
+type = "google_contacts"
+token_file = "~/.local/share/vdirsyncer/token/google_contacts"
+client_id.fetch = ["command", "secret-tool", "lookup", "server", "google", "service", "vdirsyncer", "key", "client_id"]
+client_secret.fetch = ["command", "secret-tool", "lookup", "server", "google", "service", "vdirsyncer", "key", "client_secret"]
+
+# [storage contacts_nextcloud]
+# type = "carddav"
+# url.fetch = ["command", "vdirsyncer_get", "nextcloud", "url", "calendar"]
+# username.fetch = ["command", "vdirsyncer_get", "nextcloud", "username"]
+# password.fetch = ["command", "vdirsyncer_get", "nextcloud", "password"]
