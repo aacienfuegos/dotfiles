@@ -24,6 +24,7 @@ pam-gnupg
 shell/privaterc
 skypeforlinux/*
 teams/*
+teams-insiders/*
 wireshark/*
 zoomus.conf
 zsh/.zcompdump
