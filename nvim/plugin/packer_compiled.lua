@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/aacienfuegos/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?.lua;/home/aacienfuegos/.cache/nvim/packer_hererocks/2.0.5/share/lua/5.1/?/init.lua;/home/aacienfuegos/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?.lua;/home/aacienfuegos/.cache/nvim/packer_hererocks/2.0.5/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/aacienfuegos/.cache/nvim/packer_hererocks/2.0.5/lib/lua/5.1/?.so"
+local package_path_str = "/home/aacienfuegos/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/aacienfuegos/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/aacienfuegos/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/aacienfuegos/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/aacienfuegos/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -210,7 +210,7 @@ _G.packer_plugins = {
     url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-terminal.lua"] = {
-    config = { "\27LJ\1\0026\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\rterminal\frequire\0" },
+    config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rterminal\frequire\0" },
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-terminal.lua",
     url = "https://github.com/norcalli/nvim-terminal.lua"
@@ -224,6 +224,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
   },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,
@@ -249,6 +254,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["sections-dap"] = {
+    loaded = true,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/sections-dap",
+    url = "https://github.com/sidebar-nvim/sections-dap"
+  },
+  ["sidebar.nvim"] = {
+    loaded = true,
+    path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/sidebar.nvim",
+    url = "https://github.com/sidebar-nvim/sidebar.nvim"
   },
   ["sql.nvim"] = {
     loaded = true,
@@ -306,7 +321,6 @@ _G.packer_plugins = {
     url = "https://github.com/voldikss/vim-floaterm"
   },
   ["vim-inyoface"] = {
-    config = { "\27LJ\1\2h\0\0\5\0\6\0\t4\0\0\0007\0\1\0007\0\2\0%\1\3\0%\2\4\0%\3\5\0002\4\0\0>\0\5\1G\0\1\0\28<Plug>(InYoFace_Toggle)\15<leader>cc\6n\20nvim_set_keymap\bapi\bvim\0" },
     loaded = true,
     path = "/home/aacienfuegos/.local/share/nvim/site/pack/packer/start/vim-inyoface",
     url = "https://github.com/tjdevries/vim-inyoface"
@@ -318,7 +332,7 @@ _G.packer_plugins = {
   },
   ["vim-startify"] = {
     commands = { "SLoad", "SSave" },
-    config = { "\27LJ\1\2>\0\0\2\0\3\0\0054\0\0\0007\0\1\0)\1\2\0:\1\2\0G\0\1\0!startify_disable_at_vimenter\6g\bvim\0" },
+    config = { "\27LJ\2\n>\0\0\2\0\3\0\0056\0\0\0009\0\1\0+\1\2\0=\1\2\0K\0\1\0!startify_disable_at_vimenter\6g\bvim\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -343,13 +357,9 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vim-inyoface
-time([[Config for vim-inyoface]], true)
-try_loadstring("\27LJ\1\2h\0\0\5\0\6\0\t4\0\0\0007\0\1\0007\0\2\0%\1\3\0%\2\4\0%\3\5\0002\4\0\0>\0\5\1G\0\1\0\28<Plug>(InYoFace_Toggle)\15<leader>cc\6n\20nvim_set_keymap\bapi\bvim\0", "config", "vim-inyoface")
-time([[Config for vim-inyoface]], false)
 -- Config for: nvim-terminal.lua
 time([[Config for nvim-terminal.lua]], true)
-try_loadstring("\27LJ\1\0026\0\0\2\0\3\0\0064\0\0\0%\1\1\0>\0\2\0027\0\2\0>\0\1\1G\0\1\0\nsetup\rterminal\frequire\0", "config", "nvim-terminal.lua")
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rterminal\frequire\0", "config", "nvim-terminal.lua")
 time([[Config for nvim-terminal.lua]], false)
 
 -- Command lazy-loads
@@ -363,5 +373,6 @@ if should_profile then save_profiles() end
 end)
 
 if not no_errors then
+  error_msg = error_msg:gsub('"', '\\"')
   vim.api.nvim_command('echohl ErrorMsg | echom "Error in packer_compiled: '..error_msg..'" | echom "Please check your config for correctness" | echohl None')
 end
