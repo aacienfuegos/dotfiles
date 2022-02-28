@@ -23,9 +23,12 @@ alias fd="fd --hidden"
 alias ps="procs"
 alias vim="nvim"
 alias v="nvim"
+alias vi="/usr/bin/vim"
 alias mutt='neomutt && pkill -RTMIN+12 dwmblocks'
 alias lf='lfrun'
 
+# System admin
+alias sctl="sudo systemctl"
 alias ufws="sudo ufw status numbered"
 
 alias mpow="sh $HOME/.scripts/mpow.sh"
