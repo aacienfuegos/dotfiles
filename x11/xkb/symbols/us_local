@@ -4,7 +4,6 @@ xkb_symbols "altgr-intl" {
 	name[Group1]= "English (intl., with AltGr dead keys)";
 
 	// modified keys
-	key <TLDE> { [ asciitilde, grave, dead_tilde, dead_grave ] };
 	key <LSGT> { [ bar] };
     key <BKSP> { [ BackSpace, BackSpace, Delete, Delete ] };
 
