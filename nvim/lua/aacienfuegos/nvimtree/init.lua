@@ -12,7 +12,7 @@ require'nvim-tree'.setup {
 		auto_open = true,
 	},
 	auto_close          = true,
-	open_on_tab         = true,
+	open_on_tab         = false,
 	quit_on_open 		= true,
 	hijack_cursor       = false,
 	update_cwd          = false,
@@ -49,28 +49,43 @@ require'nvim-tree'.setup {
 			list = require('aacienfuegos.nvimtree.keybinds')
 		}
 	},
-	open_file = {
-		quit_on_open = true,
-		resize_window = false,
-		window_picker = {
+	actions = {
+		change_dir = {
 			enable = true,
-			chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
-			exclude = {
-				filetype = {
-					"notify",
-					"packer",
-					"qf",
-					"diff",
-					"fugitive",
-					"fugitiveblame",
-					'vim-plug',
-				},
-				buftype  = {
-					"nofile",
-					"terminal",
-					"help",
-				},
+			global = false,
+		},
+		open_file = {
+			quit_on_open = true,
+			resize_window = false,
+			window_picker = {
+				enable = true,
+				chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+				exclude = {
+					filetype = {
+						"notify",
+						"packer",
+						"qf",
+						"diff",
+						"fugitive",
+						"fugitiveblame",
+						'vim-plug',
+					},
+					buftype  = {
+						"nofile",
+						"terminal",
+						"help",
+					},
+				}
 			}
-		}
-	}
+		},
+	},
+	log = {
+		enable = false,
+		truncate = false,
+		types = {
+			all = false,
+			config = false,
+			git = false,
+		},
+	},
 }
