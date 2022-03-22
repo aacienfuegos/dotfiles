@@ -18,6 +18,7 @@ set incsearch
 set scrolloff=8
 set tabstop=4
 set shiftwidth=4
+set wrap linebreak
 set smartindent
 " set autochdir
 set diffopt+=vertical
