@@ -45,6 +45,7 @@ alias gA='git add -A'
 alias gc='printf "Enter commit message: "; read msg; if [ -n "$msg" ]; then git commit -m $msg; else git commit; fi'
 alias gp='git pull'
 alias gP='git push'
+alias gb='git branch'
 
 # Docker
 alias dc="docker-compose"
