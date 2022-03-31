@@ -82,3 +82,20 @@ bindkey '^e' edit-command-line
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+
+# Auto loading of .env
+# .env loading in the shell
+dotenv () {
+	set -a
+	[ -f .env ] && . ./.env
+	set +a
+}
+
+# Run dotenv on login
+dotenv
+
+# Run dotenv on every new directory
+cd () {
+	builtin cd $@
+	dotenv
+}
