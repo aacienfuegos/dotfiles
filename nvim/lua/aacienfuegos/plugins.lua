@@ -12,9 +12,6 @@ return require("packer").startup(function(use)
 	use "iamcco/mathjax-support-for-mkdp"
 	use "vimwiki/vimwiki"
 
-	-- Latex
-	use "lervag/vimtex"
-
 	-- Notes
 	use "vhyrro/neorg"
 	use "vhyrro/neorg-telescope"
