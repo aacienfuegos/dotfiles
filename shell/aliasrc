@@ -9,6 +9,7 @@ alias p="paru"
 alias pS="paru -S"
 alias psu="paru -Syu"
 alias pr="paru -Rs"
+alias psoff="paru -Syu --noconfirm && sudo poweroff"
 
 alias pmix="pulsemixer"
 
