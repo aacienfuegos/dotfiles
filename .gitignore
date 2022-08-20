@@ -1,11 +1,13 @@
 *.log*
+*.secret
 BraveSoftware/*
+GIMP/*
 Microsoft/*
+MongoDB Compass Beta/*
 Nextcloud/*
 QtProject.conf
 Unknown\ Organization/*
 VirtualBox/*
-GIMP/*
 coc/*
 configstore/*
 dconf/*
@@ -18,13 +20,12 @@ menus/*
 msmtp/*
 nvim/plugged/*
 okular*
-pulse/*
 pam-gnupg
-*.secret
+pulse/*
 shell/privaterc
 skypeforlinux/*
-teams/*
 teams-insiders/*
+teams/*
 wireshark/*
 zoomus.conf
 zsh/.zcompdump
