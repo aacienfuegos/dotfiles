@@ -13,6 +13,7 @@ coc/*
 configstore/*
 dconf/*
 discord/*
+draw.io/*
 flameshot/*
 freerdp/*
 github-copilot/*
