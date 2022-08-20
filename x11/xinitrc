@@ -24,4 +24,6 @@ dbus-update-activation-environment --systemd DISPLAY
 # if dwm exits 0, restart -- this allows hot reloading of config.h
 #while type dwm >/dev/null ; do dwm && continue || break ; done
 
+/usr/bin/prime-offload # load prime
 ssh-agent dwm
+sudo /usr/bin/prime-switch # switch GPU
