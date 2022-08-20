@@ -1,20 +1,24 @@
-require'lspconfig'.texlab.setup{
+require 'lspconfig'.texlab.setup {
+	filetypes = { "tex", "bib", "plaintex" },
 	settings = {
 		texlab = {
 			auxDirectory = ".tex",
 			build = {
-				args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-outdir=.tex", "%f" },
+				args = { "-pdf", "-interaction=nonstopmode", "-synctex=1", "-shell-escape", "-outdir=.tex", "%f" },
 				executable = "latexmk",
 				forwardSearchAfter = false,
-				onSave = true
+				onSave = false
+				-- onSave = true
 			},
 			chktex = {
-				onEdit = true,
-				onOpenAndSave = true
+				onEdit = false,
+				onOpenAndSave = false
+				-- onEdit = true,
+				-- onOpenAndSave = true
 			},
 			diagnosticsDelay = 300,
 			forwardSearch = {
-				args = {"%p"},
+				args = { "%p" },
 				executable = "zathura",
 			},
 			formatterLineLength = 80,
