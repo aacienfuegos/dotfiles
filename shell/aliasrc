@@ -31,6 +31,7 @@ alias lf='lfrun'
 # System admin
 alias sctl="sudo systemctl"
 alias ufws="sudo ufw status numbered"
+alias bctl="bluetoothctl"
 
 alias mpow="sh $HOME/.scripts/mpow.sh"
 alias msfconsole="msfconsole --quiet -x \"db_connect $USER@msf\""
