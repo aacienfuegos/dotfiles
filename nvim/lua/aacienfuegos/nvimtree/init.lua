@@ -34,8 +34,18 @@ require 'nvim-tree'.setup {
 		},
 	},
 	view                = {
+		float = {
+			enable = false,
+			open_win_config = {
+				relative = "editor",
+				border = "rounded",
+				width = 30,
+				height = 30,
+				row = 1,
+				col = 1,
+			},
+		},
 		width = 30,
-		height = 30,
 		side = 'left',
 		mappings = {
 			custom_only = true,
