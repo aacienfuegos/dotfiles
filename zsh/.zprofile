@@ -8,6 +8,9 @@
 # Adds `~/.local/bin` to $PATH
 export PATH="$PATH:${$(find ~/.local/bin -type d -not -path '*\/.git*' -printf %p:)%%:}"
 
+# Adds gem binaries to $PATH
+export PATH=/home/$USER/.local/share/gem/ruby/3.0.0/bin:$PATH
+
 # Spotifyd needs this for some reason i guess
 export RUST_BACKTRACE=1
 
