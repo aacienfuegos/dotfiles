@@ -60,7 +60,7 @@ cmp.setup({
 		ghost_text = true,
 	},
 	formatting = {
-		format = require("lspkind").cmp_format({with_text = true, menu = ({
+		format = require("lspkind").cmp_format({ with_text = true, menu = ({
 			buffer = "[buf]",
 			nvim_lsp = "[LSP]",
 			luasnip = "[snip]",
@@ -68,10 +68,10 @@ cmp.setup({
 			latex_symbols = "[tex]",
 			path = "[path]",
 			copilot = "[co]",
-		})}),
+		}) }),
 	},
 })
 
 -- LSP
-local updated_capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+local updated_capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 require('lspconfig').util.default_config.capabilities = updated_capabilities
