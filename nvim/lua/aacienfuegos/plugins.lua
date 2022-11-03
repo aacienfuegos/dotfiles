@@ -56,7 +56,7 @@ return require("packer").startup(function(use)
 	use "onsails/lspkind-nvim"
 
 	-- Syntax highlighting
-	use {"folke/trouble.nvim"}
+	use { "folke/trouble.nvim" }
 
 	-- Snippets
 	use "L3MON4D3/LuaSnip"
@@ -76,18 +76,18 @@ return require("packer").startup(function(use)
 	-- Comments
 	use "numToStr/Comment.nvim"
 	use 'JoosepAlviste/nvim-ts-context-commentstring'
-    use "tjdevries/vim-inyoface"
+	use "tjdevries/vim-inyoface"
 
 	-- tpope
 	use "tpope/vim-surround"
 
 	-- TreeSitter
-	use {"nvim-treesitter/nvim-treesitter", run = "TSUpdate"}
+	use { "nvim-treesitter/nvim-treesitter", run = "TSUpdate" }
 	use "nvim-treesitter/nvim-treesitter-textobjects"
 
 	-- Telescope
 	use "nvim-telescope/telescope.nvim"
-	use {"nvim-telescope/telescope-fzf-native.nvim", run = "make" }
+	use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 	use "nvim-telescope/telescope-dap.nvim"
 	use "nvim-telescope/telescope-github.nvim"
 	use "nvim-telescope/telescope-media-files.nvim"
