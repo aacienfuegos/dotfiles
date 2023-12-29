@@ -18,3 +18,5 @@ require("aacienfuegos.sidebar")
 require("aacienfuegos.telescope")
 require("aacienfuegos.treesitter")
 require("aacienfuegos.trouble")
+
+require("aacienfuegos.autocmds")
