@@ -19,17 +19,8 @@ require 'nvim-treesitter.configs'.setup {
 		},
 	},
 	rainbow = { enable = true, extended_mode = true },
-	context_commentstring = {
-		enable = true,
-		enable_autocmd = false,
-		-- config = {
-		-- 	javascript = {
-		-- 		__default = '// %s',
-		-- 		jsx_element = '{/* %s */}',
-		-- 		jsx_fragment = '{/* %s */}',
-		-- 		jsx_attribute = '// %s',
-		-- 		comment = '// %s'
-		-- 	}
-		-- }
-	}
+}
+
+require('ts_context_commentstring').setup {
+	enable_autocmd = false,
 }
