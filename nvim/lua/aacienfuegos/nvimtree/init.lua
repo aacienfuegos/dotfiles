@@ -44,10 +44,6 @@ require 'nvim-tree'.setup {
 		},
 		width = 30,
 		side = 'left',
-		mappings = {
-			custom_only = true,
-			list = require('aacienfuegos.nvimtree.keybinds')
-		}
 	},
 	actions             = {
 		change_dir = {
