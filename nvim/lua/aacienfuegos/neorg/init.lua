@@ -2,14 +2,16 @@ require('neorg').setup {
 	-- Tell Neorg what modules to load
 	load = {
 		["core.defaults"] = {}, -- Load all the default modules
-		["core.norg.concealer"] = {}, -- Allows for use of icons
-		-- ["core.keybinds"] = { -- Configure core.keybinds
-		-- 	config = {
-		-- 		default_keybinds = true, -- Generate the default keybinds
-		-- 		neorg_leader = "<Leader>o" -- This is the default if unspecified
-		-- 	}
-		-- },
-		["core.norg.dirman"] = { -- Manage your directories with Neorg
+		["core.concealer"] = {}, -- Allows for use of icons
+		["core.keybinds"] = { -- Configure core.keybinds
+			config = {
+				hook = function(keybinds)
+					require('aacienfuegos.neorg.keybinds')
+					hook_function(keybinds)
+				end
+			}
+		},
+		["core.dirman"] = { -- Manage your directories with Neorg
 			config = {
 				workspaces = {
 					notes = "~/notes"
@@ -18,7 +20,7 @@ require('neorg').setup {
 				autochdir = true,
 			}
 		},
-		["core.norg.completion"] = {
+		["core.completion"] = {
 			config = {
 				engine = "nvim-cmp"
 			}
@@ -26,9 +28,6 @@ require('neorg').setup {
 		["core.integrations.telescope"] = {}, -- Enable the telescope module
 	},
 
-	hook = function()
-		require('aacienfuegos.neorg.keybinds')
-	end
 }
 
 local parser_configs = require('nvim-treesitter.parsers').get_parser_configs()
