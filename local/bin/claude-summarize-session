@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Generate and cache an AI summary for a Claude session at session end (Stop hook)."""
+
+import json
+import os
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+CACHE_DIR = Path.home() / ".cache" / "claude-picker"
+
+
+def path_to_project_dir(cwd: str) -> str:
+    return cwd.replace("/", "-")
+
+
+def _extract_text(content) -> str:
+    if isinstance(content, str):
+        return content.strip()
+    if isinstance(content, list):
+        for block in content:
+            if isinstance(block, dict) and block.get("type") == "text":
+                text = block.get("text", "").strip()
+                if text:
+                    return text
+    return ""
+
+
+def extract_exchanges(session_file: Path) -> list:
+    exchanges = []
+    try:
+        with open(session_file) as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    msg = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+
+                msg_type = msg.get("type")
+                if msg_type == "user":
+                    text = _extract_text(msg.get("message", {}).get("content", ""))
+                    if text:
+                        exchanges.append(("user", text[:300]))
+                elif msg_type == "assistant":
+                    text = _extract_text(msg.get("message", {}).get("content", ""))
+                    if text:
+                        exchanges.append(("assistant", text[:300]))
+
+                if len(exchanges) >= 6:
+                    break
+    except (OSError, IOError):
+        pass
+    return exchanges
+
+
+def generate_summary(session_id: str, session_file: Path) -> None:
+    cache_file = CACHE_DIR / f"{session_id}.txt"
+    if cache_file.exists():
+        return
+
+    exchanges = extract_exchanges(session_file)
+    if not exchanges:
+        return
+
+    lines = [
+        ("Usuario" if role == "user" else "Asistente") + ": " + text
+        for role, text in exchanges
+    ]
+    prompt = (
+        "Lee estos primeros mensajes de una conversación y escribe un título muy corto "
+        "(máximo 6 palabras) que describa el tema principal. "
+        "Solo el título, sin puntuación al final, en el mismo idioma que la conversación.\n\n"
+        + "\n".join(lines)
+        + "\n\nTítulo:"
+    )
+
+    try:
+        result = subprocess.run(
+            ["claude", "-p", "--model", "haiku", "--no-session-persistence"],
+            input=prompt,
+            capture_output=True,
+            text=True,
+            timeout=25,
+        )
+        if result.returncode == 0:
+            summary = result.stdout.strip()
+            if summary:
+                CACHE_DIR.mkdir(parents=True, exist_ok=True)
+                cache_file.write_text(summary)
+    except (subprocess.TimeoutExpired, FileNotFoundError, OSError):
+        pass
+
+
+def main():
+    try:
+        payload = json.load(sys.stdin)
+        session_id = payload.get("session_id", "").strip()
+    except (json.JSONDecodeError, EOFError, ValueError):
+        sys.exit(0)
+
+    if not session_id:
+        sys.exit(0)
+
+    cwd = os.getcwd()
+    project_dir = path_to_project_dir(cwd)
+    session_file = Path.home() / ".claude" / "projects" / project_dir / f"{session_id}.jsonl"
+
+    if not session_file.exists():
+        sys.exit(0)
+
+    generate_summary(session_id, session_file)
+
+
+if __name__ == "__main__":
+    main()
