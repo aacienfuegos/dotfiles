@@ -5,8 +5,8 @@ set fish_greeting
 set SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Custom variables
-set MY_TERM 'alacritty'
-set MY_BROWSERb 'brave'
+set MY_TERM 'st'
+set MY_BROWSER 'brave'
 
 # Path to Oh My Fish install.
 set -q XDG_DATA_HOME
